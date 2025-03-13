@@ -57,7 +57,7 @@ def generate_story(scene):
         template=template
     )
 
-    chain = LLMChain(llm=OpenAI(temperature=1, openai_api_key="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"), prompt=prompt)
+    chain = LLMChain(llm=OpenAI(temperature=1, openai_api_key="OPEN_AI_API_KEY_HERE"), prompt=prompt)
 
     story = chain.run(scene)
     return story
